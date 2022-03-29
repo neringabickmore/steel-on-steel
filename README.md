@@ -2,6 +2,23 @@
 
 This is a template repository with basic project set up.
 
+## Virtual environment set up
+
+1. `pip3 install -r requirements.txt`
+2. Create `env.py` file with the following variables and add the file to `.gitignore`
+
+``` python
+
+import os
+
+os.environ.setdefault("IP", "127.0.0.1")
+os.environ.setdefault("PORT", "5500")
+os.environ.setdefault("SECRET_KEY", "your_secret_key")
+os.environ.setdefault("DEBUG", "development")
+```
+
+3. Run the app with the command: `python app.py`
+
 ## SCSS set up
 
 ### To install SCSS packages
