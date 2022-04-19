@@ -18,7 +18,7 @@
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" type="text/css"> -->
-    
+
     <!-- LOCAL CSS STYLESHEET -->
     <link rel="stylesheet" href="css/main.min.css">
 
@@ -29,21 +29,53 @@
     <title>Steel-on-steel</title>
 </head>
 
-<body>
+<body class="container">
+    <!-- SIDE NAVIGATION -->
+    <div class="side-nav">
+        <nav class="side-nav__nav">
+            <ul class="side-nav__list">
+                <li class="side-nav__item"><a href="#about" class="side-nav__link"><span>01</span> About</a></li>
+                <li class="side-nav__item"><a href="#offerings" class="side-nav__link"><span>02</span> Offerings</a></li>
+                <li class="side-nav__item"><a href="#team" class="side-nav__link"><span>03</span> Team</a></li>
+                <li class="side-nav__item"><a href="#testimonials" class="side-nav__link"><span>04</span> Testimonials</a></li>
+                <li class="side-nav__item"><a href="#contact-us" class="side-nav__link"><span>05</span> Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
     <!-- HEADER -->
     <header class="header">
-        <h1 class="h1">header</h1>
+        <!-- contacts -->
+        <div class="header__contacts">
+            <h1>Contact details</h1></div>
+        <!-- logo-->
+        <div class="header__logo"><h1 class="h1">LOGO</h1></div>
     </header>
     <!-- MAIN CONTENT -->
-    <main class="main">
-        <h1 class="h2">some content here. and more</h1>
-        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quasi numquam in
-            soluta. Aliquam fugiat eveniet expedita tempore? Rerum debitis porro vitae reprehenderit voluptas libero
-            error qui nobis nihil nam?</p>
+    <main>
+        <section class="section-about" id="about">
+            <h1>About</h1>
+        </section>
+
+        <section class="section-offerings" id="offerings">
+            <h1>Offerings</h1>
+        </section>
+
+        <section class="section-team" id="team">
+            <h1>Team</h1>
+        </section>
+
+        <section class="section-testimonials" id="testimonials">
+            <h1>Testimonials</h1>
+        </section>
+
+        <section class="section-contact-us" id="contact-us">
+            <h1>Contact us</h1>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-        <h1 class="h3">footer</h1>
+        <h1 class="h3">Memberships</h1>
+        <h1 class="h3">Disclaimer</h1>
     </footer>
 </body>
 
