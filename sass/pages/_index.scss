@@ -1,0 +1,14 @@
+.sections {
+    background-color: var(--color-secondary-yellow);
+    grid-column: center-start / center-end;
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    align-items: start;
+}
+.section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+    grid-template-rows: auto;
+    grid-row-gap: 1.5rem;
+
+}
