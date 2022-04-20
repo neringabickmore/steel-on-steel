@@ -1,0 +1,7 @@
+.side-nav {
+    background-color: var(--color-off-white);
+    grid-column: sidenav-start / sidenav-end;
+    grid-row: 1 / -1;
+    display: flex;
+    justify-content: center;
+}
