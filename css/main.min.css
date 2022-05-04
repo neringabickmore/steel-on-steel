@@ -102,20 +102,38 @@ body {
 .nav {
   margin-top: 4rem;
   font-size: 1.6rem; }
+  .nav > *:hover {
+    color: var(--color-grey); }
   .nav__list {
     list-style: none; }
   .nav__item {
     position: relative; }
     .nav__item:not(:last-child) {
       margin-bottom: .5rem; }
+  .nav__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-white);
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+    background-color: .1s; }
+  .nav__item:hover::before, .nav__item--active::before {
+    transform: scaleY(1);
+    width: 100%; }
   .nav__link:link, .nav__link:visited {
-    color: var(--color-primary-blue);
+    color: var(--color-secondary-blue);
     font-weight: var(--font-weight-medium);
     text-decoration: none;
     text-transform: uppercase;
     align-items: center;
     display: flex;
-    padding: 1rem 3rem; }
+    padding: 1rem 3rem;
+    position: relative;
+    z-index: 999; }
   .nav__icon {
     width: 2.4rem;
     height: 2.4rem;
