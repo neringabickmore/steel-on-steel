@@ -102,8 +102,6 @@ body {
 .nav {
   margin-top: 4rem;
   font-size: 1.6rem; }
-  .nav > *:hover {
-    color: var(--color-grey); }
   .nav__list {
     list-style: none; }
   .nav__item {
