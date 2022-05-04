@@ -1,7 +1,47 @@
 .side-nav {
-    background-color: var(--color-off-white);
+    background-color: var(--color-grey);
     grid-column: sidenav-start / sidenav-end;
     grid-row: 1 / -1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+
+    &__list {
+        list-style: none;
+
+    }
+    &__item {
+        position: relative;
+        
+
+        &:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+
+    }
+    &__link:link,
+    &__link:visited {
+        color: var(--color-primary-blue);
+        font-weight: var(--font-weight-medium);
+        text-decoration: none;
+        text-transform: uppercase;
+        align-items: center;
+        display: flex;
+        padding: 1rem 3rem;
+    }
+
+    &__icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1.2rem;
+        fill: currentColor;
+        
+        
+
+    }
 }
