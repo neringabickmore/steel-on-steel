@@ -73,40 +73,57 @@ body {
   padding: 4rem; }
 
 .header {
-  background-color: var(--color-primary-blue);
+  background-color: var(--color-off-white);
   color: var(--color-primary-yellow);
   grid-column: full-start / full-end;
   display: grid;
-  grid-template-rows: repeat(2, min-content);
-  justify-content: center; }
+  grid-template-rows: repeat(2, min-content); }
   .header__contacts {
-    color: var(--color-grey);
     display: flex;
-    justify-self: center;
-    align-items: center; }
+    align-items: center;
+    justify-content: end;
+    background-color: var(--color-primary-blue); }
     .header__contacts--email {
       margin: 2rem 3rem;
-      text-transform: lowercase; }
+      font-family: var(--font-header);
+      letter-spacing: 1px;
+      font-size: 1.8rem;
+      transition: all .5s; }
+      .header__contacts--email-address, .header__contacts--email-address:visited, .header__contacts--email-address:active {
+        margin: 3rem 3rem;
+        color: var(--color-grey);
+        text-decoration: none; }
+      .header__contacts--email-address:hover, .header__contacts--email-address:active:hover {
+        text-decoration: underline;
+        transform: translateX(3px); }
+    .header__contacts--email a {
+      text-decoration: none; }
     .header__contacts--book-box {
       background-color: var(--color-primary-yellow);
-      border-radius: 50%;
-      height: 4rem;
-      width: 22rem;
-      margin-left: 5rem; }
-    .header__contacts--book-link {
-      margin: 2rem 3rem;
+      border-radius: 25px;
+      height: auto;
+      cursor: pointer;
+      margin-right: 5rem;
+      transition: all .5s; }
+    .header__contacts--book-box:hover {
+      background-color: var(--color-secondary-yellow);
+      transform: translateY(3px); }
+    .header__contacts--book-link:link, .header__contacts--book-link:visited, .header__contacts--book-link:active {
+      margin: .45rem 3rem;
       color: var(--color-primary-blue);
       text-decoration: none;
-      margin-left: 3rem; }
+      font-weight: bold;
+      display: flex; }
     .header__contacts--icon {
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 3rem;
+      height: 3rem;
       margin-right: 1.2rem;
-      padding-top: .8rem;
       fill: currentColor; }
   .header__logo {
-    justify-self: center;
+    justify-self: start;
     margin: 3rem 0; }
+    .header__logo--img {
+      height: 20rem; }
 
 .side-nav {
   background-color: var(--color-grey);
