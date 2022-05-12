@@ -1,13 +1,31 @@
 .sections {
-    // background-color: var(--color-secondary-yellow);
-    grid-column: center-start / center-end;
+    position: relative;
+    grid-column: full-start / full-end;
     display: grid;
     align-items: start;
 }
+
 .section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
     grid-template-rows: auto;
     grid-row-gap: 1.5rem;
 
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
