@@ -1,15 +1,14 @@
 .side-nav {
-    background-color: var(--color-grey);
+    background-color: var(--color-secondary-blue);
     grid-column: sidenav-start / sidenav-end;
     grid-row: 1 / -1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .nav {
     margin-top: 4rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
 
     &__list {
         list-style: none;
@@ -30,7 +29,7 @@
         left: 0;
         height: 100%;
         width: 3px;
-        background-color: var(--color-white);
+        background-color: var(--color-primary-yellow);
         transform: scaleY(0);
         // settings set to stage animation
         transition: transform .2s,
@@ -44,26 +43,42 @@
         width: 100%;
     }
 
-
     &__link:link,
     &__link:visited {
-        color: var(--color-secondary-blue);
+        color: var(--color-grey);
         font-weight: var(--font-weight-medium);
         text-decoration: none;
         text-transform: uppercase;
         align-items: center;
         display: flex;
         padding: 1rem 3rem;
-        
         position: relative;
         z-index: 999;
     }
 
+    &__link:hover {
+        color: var(--color-secondary-blue);
+        transition: all .6s;
+    }
 
     &__icon {
-        width: 2.4rem;
-        height: 2.4rem;
-        margin-right: 1.2rem;
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1.4rem;
         fill: currentColor;
+    }
+}
+
+.logo {
+    justify-content:center;
+    display: flex;
+    height: 23rem;
+    margin: 3rem 3rem;
+    padding: 2rem 0;
+    
+    &__img {
+        justify-content: center;
+        width: auto;
+        height: 21rem;
     }
 }
