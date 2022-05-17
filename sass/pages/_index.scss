@@ -11,7 +11,37 @@
     grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
     grid-template-rows: auto;
     grid-row-gap: 1.5rem;
-    padding: 5rem 10rem 2rem 10rem;
+    padding: 2rem 1rem 2rem 5rem;
+
+    &__about {
+        padding: 3rem 1rem;
+        min-height: 60rem;
+        display: grid;
+        align-items: center;
+    }
+
+    &__offerings {
+        
+        &--cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 5rem;
+
+        }
+        &--card {
+            flex: 0 0 30%;
+            height: 55rem;
+            align-items: center;
+            margin: 0 3rem;
+            background-color: var(--color-grey);
+            display: flex;
+            // flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    }
 
 }
 

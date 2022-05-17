@@ -7,6 +7,7 @@
     opacity: .95;
 
     &__contacts {
+        padding-right: 5rem;
         display: flex;
         align-items: center;
         justify-content:end;
@@ -35,38 +36,6 @@
             & a {
                 text-decoration: none;
             }
-        }
-
-        &--book-box {
-            background-color: var(--color-primary-yellow);
-            border-radius: 25px;
-            height: auto;
-            cursor: pointer;
-            margin-right: 5rem;
-            transition: all .5s;
-        }
-
-        &--book-box:hover {
-            background-color: var(--color-secondary-yellow);
-            transform: translateY(3px);
-        }
-       
-        &--book-link:link, 
-        &--book-link:visited, 
-        &--book-link:active {
-            margin: .45rem 3rem;
-            color: var(--color-primary-blue);
-            text-decoration: none;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-        }
-
-        &--icon {
-            width: 3rem;
-            height: 3rem;
-            margin-right: 1.2rem;
-            fill: currentColor;
         }
     }
 }
