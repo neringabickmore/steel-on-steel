@@ -1,0 +1,124 @@
+.card {
+    // FUNCTIONALITY
+    perspective: 150rem;
+    position: relative;
+    height: 52rem;
+
+    &__side {
+        height: 56rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(var(--color-grey), .5);
+
+        &--front {
+            background-color: var(--color-white);
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, var(--color-secondary-blue), var(--color-grey));
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, var(--color-secondary-blue),var(--color-grey));
+            }
+
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 35rem;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+                    var(--color-secondary-blue), #5279cb),
+                url(../img/investor-img.jpg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+            var(--color-secondary-blue), #5279cb),
+                url(../img/landlord-img.jpg);
+        }
+
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        box-decoration-break: clone;
+        display: grid;
+        justify-content: center;
+        
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+                    rgba(var(--color-secondary-blue), .85),
+                    rgba(var(--color-grey), .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+                rgba(var(--color-secondary-blue), .85),
+                rgba(var(--color-grey), .85));
+        }
+
+    }
+
+    &__details {
+        padding: 3rem;
+        display: grid;
+        justify-content: center;
+
+        ul {
+            list-style: none;
+            width: 100%;
+            // centers elements in the list
+            margin: 0 auto;
+            justify-content: center;
+
+            li {
+                text-align: center;
+                font-size: 1.6rem;
+                padding: 1rem;
+                color: var(--color-off-white);
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid var(--color-grey);
+                }
+
+            }
+        }
+    }
+
+    // BACK SIDE STYLING
+    &__cta {
+        // @include center-horizontal-vertical;
+        position:absolute;
+        display: grid;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+    }
+
+}
