@@ -1,13 +1,62 @@
 .sections {
-    // background-color: var(--color-secondary-yellow);
-    grid-column: center-start / center-end;
+    position: relative;
+    grid-column: full-start / full-end;
     display: grid;
     align-items: start;
 }
+
 .section {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
     grid-template-rows: auto;
     grid-row-gap: 1.5rem;
+    padding: 5rem;
+    
 
+    &__about {
+        position: relative;
+        display: grid;
+        align-items: center;
+        min-height: 50rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        background-image: linear-gradient(to right bottom,
+           rgba(20,33,61,.15), rgba(82,121,203,.15));  
+    }
+
+    &__offerings {
+        // position: relative;
+        
+        &--cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 5rem;
+
+        }
+        &--card {
+            flex: 0 0 30%;
+            margin: 0 3rem;
+        }
+    }
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
 }

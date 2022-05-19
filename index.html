@@ -91,10 +91,10 @@
                 <a href="mailto:james.bickmore@steelonsteel.co.uk"><u
                         class="header__contacts--email-address">james.bickmore@steelonsteel.co.uk</u></a>
             </p>
-            <div class="header__contacts--book-box">
-                <a href="https://calendly.com/james-bickmore/20min" class="header__contacts--book-link"
-                    rel="noopener noreferrer" target="_blank" aria-label="Book a call"> <svg
-                        class="header__contacts--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <div class="book__btn book__btn--box">
+                <a href="https://calendly.com/james-bickmore/20min" class="book__btn--link" rel="noopener noreferrer"
+                    target="_blank" aria-label="Book a call"> <svg class="book__btn--icon"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                         <path
                             d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z" />
@@ -104,18 +104,109 @@
     </header>
     <!-- MAIN CONTENT -->
     <main class="sections">
-        <section class="section" id="about">
-            <h1 class="section__about">About</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatibus, saepe dolores accusamus ex,
-                quas laudantium, pariatur iure voluptate est assumenda quam corrupti totam expedita sapiente doloribus
-                illum inventore esse.</p>
+        <!-- ABOUT SECTION -->
+        <section class="section section__about">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                    Your browser is not supported!
+                </video>
+            </div>
+            <h1 class="section__about--title h1">About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatibus, saepe dolores accusamus
+                ex, quas laudantium, pariatur iure voluptate est assumenda quam corrupti totam expedita sapiente
+                doloribus illum inventore esse.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatibus, saepe dolores accusamus
+                ex, quas laudantium, pariatur iure voluptate est assumenda quam corrupti totam expedita sapiente
+                doloribus illum inventore esse.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatibus, saepe dolores accusamus
+                ex, quas laudantium, pariatur iure voluptate est assumenda quam corrupti totam expedita sapiente
+                doloribus illum inventore esse.</p>
         </section>
-
-        <section class="section" id="offerings">
-            <h1 class="section__offerings">Offerings</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, reiciendis nostrum aperiam magni
-                maxime, reprehenderit aspernatur quos adipisci tenetur a veritatis voluptatem ut at modi non tempora
-                culpa voluptatum neque?</p>
+        <!-- OFFERINGS SECTION -->
+        <section class="section section__offerings">
+            <div class="">
+                <h1 class="section__offerings--tittle h1">Offerings</h1>
+                <div class="section__offerings--cards">
+                    <!-- Investors Card -->
+                    <div class="section__offerings--card card">
+                        <!-- Card Front -->
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h2 class="h2">
+                                <span class="card__heading-span card__heading-span--1">
+                                    Investors
+                                </span>
+                            </h2>
+                        </div>
+                        <!--Card Back -->
+                        <div class="card__side card__side--back  card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__details">
+                                    <ul>
+                                        <li>benefit 1</li>
+                                        <li>benefit 1</li>
+                                        <li>benefit 1</li>
+                                        <li>benefit 1</li>
+                                        <li>benefit 1</li>
+                                    </ul>
+                                </div>
+                                <div class="book__btn book__btn--box ">
+                                    <a href="https://calendly.com/james-bickmore/20min" class="book__btn--link"
+                                        rel="noopener noreferrer" target="_blank" aria-label="Book a call"> <svg
+                                            class="book__btn--icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512">
+                                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z" />
+                                        </svg><span>book a call</span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Landlords Card -->
+                    <div class="section__offerings--card card">
+                        <!-- Card Front -->
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h2 class="h2">
+                                <span class="card__heading-span card__heading-span--2">
+                                    Landlords
+                                </span>
+                            </h2>
+                        </div>
+                        <!-- Card Back -->
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__details">
+                                    <ul>
+                                        <li>benefit 1</li>
+                                        <li>benefit 1</li>
+                                        <li>benefit 1</li>
+                                        <li>benefit 1</li>
+                                        <li>benefit 1</li>
+                                    </ul>
+                                </div>
+                                <div class="book__btn book__btn--box">
+                                    <a href="https://calendly.com/james-bickmore/20min" class="book__btn--link"
+                                        rel="noopener noreferrer" target="_blank" aria-label="Book a call"> <svg
+                                            class="book__btn--icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512">
+                                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z" />
+                                        </svg><span>book a call</span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="section" id="team">

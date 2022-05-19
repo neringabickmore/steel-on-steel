@@ -1,0 +1,35 @@
+.book__btn {
+    
+    &--box {
+        display: flex;
+        background-color: var(--color-primary-yellow);
+        border-radius: 25px;
+        height: auto;
+        cursor: pointer;
+        // margin-right: 5rem;
+        transition: all .5s;
+    }
+
+    &--box:hover {
+        background-color: var(--color-secondary-yellow);
+        transform: translateY(3px);
+    }
+
+    &--icon {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1.2rem;
+        fill: currentColor;
+    }
+
+    &--link:link,
+    &--link:visited,
+    &--link:active {
+        margin: .45rem 3rem;
+        color: var(--color-primary-blue);
+        text-decoration: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+}
