@@ -28,15 +28,15 @@
     &__offerings {
         
         &--cards {
-            min-height: 82rem;
+            height: 82rem;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            padding-top: 5rem;
 
         }
         &--card {
+            height: 56rem;
             flex: 0 0 30%;
             margin: 0 3rem;
         }
