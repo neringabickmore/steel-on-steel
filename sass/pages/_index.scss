@@ -26,9 +26,9 @@
     }
 
     &__offerings {
-        // position: relative;
         
         &--cards {
+            min-height: 82rem;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
