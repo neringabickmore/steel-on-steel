@@ -69,6 +69,18 @@
     }
 }
 
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 24rem;
+   
+}
+
+.sticky-nav + .nav {
+    padding-top: 60px;
+}
+
 .logo {
     justify-content:center;
     display: flex;
