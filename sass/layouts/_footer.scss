@@ -4,4 +4,36 @@
     grid-column: full-start / full-end;
     padding: 4rem;
     opacity: .8;
+    height: min-content;
+    
+
+    &__memberships {
+        justify-content: space-around;
+        display: flex;
+        position: relative;
+    }
+
+    &__membership {
+            align-items: center;
+            height: 15rem;
+            width: auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+    }
+
+        
+        &__membership-img {
+                justify-content: center;
+                display: flex;
+                width: 10rem;
+                height: 10rem;
+                margin-bottom: 2rem;
+        }
+
+        &__membership-img-prs {
+            width: auto;
+        }
+
+    
 }
